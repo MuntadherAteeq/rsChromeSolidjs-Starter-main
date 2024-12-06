@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import { render } from "solid-js/web";
 import "./index.css";
-
 const Popup = () => {
-  useEffect(() => {
-    // create new Tab if extension is clicked
-    chrome.tabs.create({ url: "newtab.html" });
-  }, []);
-
   return (
     <>
-      <div className="bg-gray-200 h-full w-full">
-        <div className="text-7xl">React, Typescript, Starter Code</div>
+      <div class="h-96 w-96 flex flex-col gap-8 items-center justify-center bg-gray-900 text-white">
+        <h1 class="text-6xl">Popup</h1>
       </div>
     </>
   );
 };
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Popup />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+render(() => <Popup />, document.getElementById("root") as HTMLElement);

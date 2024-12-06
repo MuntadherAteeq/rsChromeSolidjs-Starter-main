@@ -1,9 +1,4 @@
 // init .babelrc file
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-typescript",
-    "@babel/preset-react",
-    "solid"
-  ]
+  "presets": ["@babel/preset-env", "@babel/preset-typescript", "solid"]
 }

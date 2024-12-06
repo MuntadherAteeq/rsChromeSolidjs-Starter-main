@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.81.0"
+    "babel-preset-solid": "^1.9.3",
+    "sass": "^1.81.0",
+    "solid-js": "^1.9.3"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
